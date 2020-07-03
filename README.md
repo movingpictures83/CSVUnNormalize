@@ -2,7 +2,8 @@
 # Language: Python
 # Input: TXT (file containing name of CSV file to reverse normalize and TXT file of total counts)
 # Output: CSV (file will contain original counts)
-# Tested with: PluMA 1.0, Python 2.7
+# Tested with: PluMA 1.1, Python 3.6
+# Dependency: numpy==1.16.0
 
 PluMA plugin that can take a CSV file of samples and coutns and un-normalize each sample using
 the provided TXT file which is a tab-delimited table of samples and counts.  Sample names in the TXT
