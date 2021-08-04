@@ -1,4 +1,4 @@
-
+import PyPluMA
 import sys
 import numpy
 
@@ -6,8 +6,8 @@ class CSVUnNormalizePlugin:
 
     def input(self, filename):
         tempstuff = open(filename, 'r')
-        self.myfile = tempstuff.readline().strip()
-        self.mycountfile = tempstuff.readline().strip()
+        self.myfile = PyPluMA.prefix()+"/"+tempstuff.readline().strip()
+        self.mycountfile = PyPluMA.prefix()+"/"+tempstuff.readline().strip()
 
     def run(self):
         countfilestuff = open(self.mycountfile, 'r')
